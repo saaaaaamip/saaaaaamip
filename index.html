@@ -4,33 +4,73 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Samip</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Georgia, 'Times New Roman', serif;
-      max-width: 600px;
-      margin: 80px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
-      font-size: 16px;
+      font-family: 'Newsreader', Georgia, serif;
+      max-width: 580px;
+      margin: 0 auto;
+      padding: 100px 24px 80px;
+      line-height: 1.75;
+      color: #070707;
+      font-size: 18px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
+
+    ::selection {
+      background: #d4d0c8;
+    }
+
     a {
-      color: #111;
+      color: #222;
+      text-decoration-color: #bbb5ab;
+      text-underline-offset: 3px;
+      text-decoration-thickness: 1px;
+      transition: text-decoration-color 0.2s ease;
     }
+
+    a:hover {
+      text-decoration-color: #222;
+    }
+
     p {
-      margin: 1.2em 0;
+      margin: 0 0 1.5em;
     }
+
     .interests {
-      margin-top: 1.5em;
-    }
-    .interests p {
-      margin: 0.8em 0;
-    }
-    .links {
       margin-top: 2em;
     }
+
+    .interests .label {
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      margin: 0 0 0.75em;
+    }
+
+    .interest-item {
+      margin: 0 0 1.1em;
+      padding-left: 1.1em;
+      text-indent: -1.1em;
+    }
+
+    .interest-item::before {
+      content: "\2013";
+      margin-right: 0.5em;
+      color: #a09890;
+    }
+
+    .links {
+      margin-top: 2.5em;
+      display: flex;
+      gap: 1.5em;
+    }
+
     .links a {
-      margin-right: 1em;
+      font-size: 16px;
+      letter-spacing: 0.02em;
     }
   </style>
 </head>
@@ -38,20 +78,23 @@
   <p>
     I am a cofounder of <a href="https://qlabs.sh" target="_blank" rel="noopener noreferrer">Q</a>, a new research lab focused on solving generalization.
     Before this, I was one of the founding members of <a href="https://blog.replit.com/llms" target="_blank" rel="noopener noreferrer">Replit's</a> <a href="https://blog.replit.com/ai" target="_blank" rel="noopener noreferrer">AI team</a>
-    and researched LLMs for code as an undergraduate. I live in SF.
+    and researched coding LLMs as an undergraduate. I live in SF.
   </p>
+
   <p>
-    I try to work on fundamental technologies that move our civilization forward.
+    I like working on technologies that move our civilization forward.
   </p>
+
   <div class="interests">
-    <p><strong>A few interests:</strong></p>
-    <p>- Fundamentals of intelligence (aka generalization) is extremely underresearched. This is my current focus.</p>
-    <p>- Foundations of physics are still unclear and physics research has stalled for many decades. We need a <a href="https://writings.stephenwolfram.com/2021/11/the-concept-of-the-ruliad/" target="_blank" rel="noopener noreferrer">new kind</a> <a href="https://writings.stephenwolfram.com/2023/12/observer-theory/" target="_blank" rel="noopener noreferrer">of physics</a>.</p>
-    <p>- We've made surprisingly little progress in curing diseases. It hints that we need <a href="https://drmichaellevin.org/research/" target="_blank" rel="noopener noreferrer">drastic changes</a> in how we do biology.</p>
+    <p class="label">A few interests</p>
+    <p class="interest-item">fundamentals of intelligence (aka generalization) is extremely underresearched. This is my current focus.</p>
+    <p class="interest-item">foundations of physics are still unclear and physics research has stalled for many decades. We need a <a href="https://writings.stephenwolfram.com/2021/11/the-concept-of-the-ruliad/" target="_blank" rel="noopener noreferrer">new kind</a> <a href="https://writings.stephenwolfram.com/2023/12/observer-theory/" target="_blank" rel="noopener noreferrer">of physics</a>.</p>
+    <p class="interest-item">we've made surprisingly little progress in curing diseases. It hints that we need <a href="https://drmichaellevin.org/research/" target="_blank" rel="noopener noreferrer">drastic changes</a> in how we do biology.</p>
   </div>
+
   <div class="links">
-    <a href="https://x.com/industriaalist" target="_blank" rel="noopener noreferrer">X</a>
-    <a href="mailto:s@qlabs.sh">Email</a>
+    <a href="https://x.com/industriaalist" target="_blank" rel="noopener noreferrer">x</a>
+    <a href="mailto:s@qlabs.sh">email</a>
   </div>
 </body>
 </html>
